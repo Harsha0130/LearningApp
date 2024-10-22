@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context=".app_dev_screen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Web Development"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#ffde59"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="52dp"
+            android:onClick="expand1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/t1">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Web Overview"
+                    android:textColor="#002366"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/intro_details1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="An introductory section that defines web development and its critical role in creating websites and web applications. It discusses the difference between front-end (client-side) and back-end (server-side) development and how both contribute to a fully functional website."
+                    android:textColor="#002366"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:onClick="expand2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card1">
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Languages and Technologies"
+                    android:textColor="#002366"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/intro_details2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A detailed look at the primary programming languages used in web development, including HTML for content structure, CSS for visual design and layout, and JavaScript for dynamic interactivity. This section also introduces additional technologies, such as SQL for database management and frameworks like Bootstrap for responsive design."
+                    android:textColor="#002366"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:onClick="expand3"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card2">
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frameworks"
+                    android:textColor="#002366"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/intro_details3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="An in-depth exploration of popular web development frameworks and libraries, such as React for building user interfaces efficiently, Angular for creating dynamic single-page applications, and Vue.js for progressive web apps. This section discusses how these tools can enhance productivity, code reusability, and maintainability."
+                    android:textColor="#002366"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:onClick="expand4"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card3">
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEO Best Practices"
+                    android:textColor="#002366"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/intro_details4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A comprehensive overview of search engine optimization (SEO) strategies to improve website visibility in search results. It covers essential practices like keyword research, optimizing meta tags, creating quality content, and enhancing user experience. The section also highlights the significance of mobile-friendliness and site speed for ranking higher in search engines."
+                    android:textColor="#002366"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:onClick="expand5"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card4">
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hosting and Deployment"
+                    android:textColor="#002366"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/intro_details5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detailed information on various hosting options, including shared hosting, virtual private servers (VPS), and cloud hosting. This section outlines the steps for deploying a website online, understanding domain registration, setting up SSL certificates for secure connections, and the importance of regular maintenance and updates for ongoing website performance."
+                    android:textColor="#002366"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context=".app_dev_screen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="App Development"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#ffde59"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:onClick="expand1"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:contentPadding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t1">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Overview"
+                android:textColor="#002366"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/intro_details1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A brief introduction to app development, explaining what it is and why it is essential in the digital landscape. It highlights the growing demand for mobile applications and their impact on users' daily lives."
+                android:textColor="#002366"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="200dp"
+        android:onClick="expand2"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:contentPadding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card1">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Development Tools"
+                android:textColor="#002366"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/intro_details2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An overview of essential tools and software used for creating mobile applications. This includes integrated development environments (IDEs) like Android Studio for Android apps and Xcode for iOS apps, as well as other useful tools like emulators and version control systems."
+                android:textColor="#002366"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:onClick="expand3"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card2">
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frameworks"
+                    android:textColor="#002366"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/intro_details3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A description of popular frameworks that streamline the app development process. For example, React Native allows for cross-platform development using JavaScript, while Flutter offers a rich set of pre-designed widgets for beautiful UI designs. This section can also cover the advantages of using frameworks."
+                    android:textColor="#002366"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:onClick="expand4"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card3">
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Practices"
+                    android:textColor="#002366"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/intro_details4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Key tips and standards for effective app development. This includes writing clean code, following design principles for user experience (UX), and implementing testing and debugging practices to ensure app reliability and performance."
+                    android:textColor="#002366"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:onClick="expand5"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card4">
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deployment"
+                    android:textColor="#002366"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/intro_details5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steps and guidelines for launching an app on various platforms, such as the Google Play Store and Apple App Store. This includes preparing the app for submission, understanding app store guidelines, and strategies for marketing the app after launch."
+                    android:textColor="#002366"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
