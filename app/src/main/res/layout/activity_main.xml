@@ -32,7 +32,7 @@
         app:srcCompat="@drawable/phone_icon" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/editTextName"
         android:textColor="@color/white"
         android:layout_width="214dp"
         android:layout_height="47dp"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
     <Button
         android:id="@+id/main_signup_btn"

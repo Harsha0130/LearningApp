@@ -38,16 +38,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
-        android:id="@+id/editTextPhone"
-        android:textColor="@color/white"
+        android:id="@+id/editTextName"
         android:layout_width="214dp"
         android:layout_height="47dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="35dp"
         android:background="@drawable/rounded_edittext_bg"
         android:ems="10"
         android:hint=" Full Name"
         android:inputType="textPersonName"
         android:padding="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
@@ -74,8 +74,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
-        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
         app:layout_constraintTop_toTopOf="@+id/textView">
 
 
@@ -128,40 +128,28 @@
         android:textColorHint="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
-        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
         app:layout_constraintTop_toTopOf="@+id/textView5" />
 
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Phone : "
-        android:textColor="#002366"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
     <EditText
-        android:id="@+id/editText"
-        android:textColor="@color/white"
+        android:id="@+id/editTextPhone"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         android:background="@drawable/rounded_edittext_bg"
         android:ems="10"
-        android:hint=" +91 XXXXXXXXXX"
+        android:hint=" XXXXX XXXXX"
         android:inputType="phone"
         android:padding="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
-        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
-        app:layout_constraintTop_toTopOf="@+id/textView6" />
+        app:layout_constraintBottom_toBottomOf="@+id/ccp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toTopOf="@+id/ccp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -173,8 +161,9 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/ccp" />
 
     <EditText
         android:id="@+id/editText2"
@@ -189,12 +178,12 @@
         android:textColorHint="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
-        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
         app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <Button
-        android:id="@+id/main_signup_btn"
+        android:id="@+id/signup_btn"
         android:layout_width="147dp"
         android:layout_height="52dp"
         android:layout_marginTop="44dp"
@@ -208,6 +197,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
-
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
