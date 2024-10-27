@@ -6,10 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
+import com.hbb20.CountryCodePicker;
 
 public class MainActivity extends AppCompatActivity {
 
     Button login_btn, signup_btn;
+
+    CountryCodePicker ccp;
+    EditText editTextPhone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +39,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // --------------------------------------------------------------------------------------------------
+
+        ccp = findViewById(R.id.ccp);
+        editTextPhone = findViewById(R.id.editTextName);
+
+        // Optional: Set default country
+        ccp.setDefaultCountryUsingNameCode("IN"); // Change "IN" to your desired default country code
+
+
+//    public String getPhoneNumber() {
+//        // Combine country code and phone number
+//        String phoneNumber = ccp.getSelectedCountryCodeWithPlus() + editTextPhone.getText().toString();
+//        return phoneNumber;
+//    }
+
+
+        // --------------------------------------------------------------------------------------------------
 
 
     }
