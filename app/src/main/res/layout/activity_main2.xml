@@ -25,66 +25,93 @@
         android:layout_width="103dp"
         android:layout_height="102dp"
         android:layout_marginTop="44dp"
-        android:tint="#ffff00"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@android:drawable/arrow_down_float" />
+        app:srcCompat="@android:drawable/arrow_down_float"
+        app:tint="#ffff00" />
 
-    <Button
+    <ImageButton
         android:id="@+id/app_btn"
-        android:layout_width="241dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="16dp"
-        android:text="App \nDevelopment"
-        android:padding="10dp"
-        android:background="@drawable/rounded_edittext_bg"
-        android:backgroundTint="#002366"
-        android:textSize="24sp"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="0dp"
+        app:srcCompat="@drawable/app_imgbtn"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="110dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/app_btn"
-        app:layout_constraintEnd_toStartOf="@+id/app_btn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/app_btn"
-        app:layout_constraintVertical_bias="0.541"
-        app:srcCompat="@drawable/android" />
-
-    <Button
+    <ImageButton
         android:id="@+id/web_btn"
-        android:layout_width="245dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="16dp"
-        android:text="Web \nDevelopment"
-        android:padding="10dp"
-        android:background="@drawable/rounded_edittext_bg"
-        android:backgroundTint="#002366"
-        android:textSize="24sp"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_btn" />
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:padding="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/app_btn"
+        app:srcCompat="@drawable/web_imgbtn"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="111dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/web_btn"
-        app:layout_constraintEnd_toStartOf="@+id/web_btn"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/web_btn"
-        app:layout_constraintVertical_bias="0.479"
-        app:srcCompat="@drawable/web" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/app_btn"-->
+<!--        android:layout_width="241dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="App \nDevelopment"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@drawable/rounded_edittext_bg"-->
+<!--        android:backgroundTint="#002366"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView2" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="110dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/app_btn"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/app_btn"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/app_btn"-->
+<!--        app:layout_constraintVertical_bias="0.541"-->
+<!--        app:srcCompat="@drawable/android" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/web_btn"-->
+<!--        android:layout_width="245dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="84dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="Web \nDevelopment"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@drawable/rounded_edittext_bg"-->
+<!--        android:backgroundTint="#002366"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/app_btn" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView4"-->
+<!--        android:layout_width="111dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/web_btn"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/web_btn"-->
+<!--        app:layout_constraintHorizontal_bias="0.9"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/web_btn"-->
+<!--        app:layout_constraintVertical_bias="0.479"-->
+<!--        app:srcCompat="@drawable/web" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

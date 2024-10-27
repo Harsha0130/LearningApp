@@ -7,10 +7,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    Button app_dev, web_dev;
+    ImageButton app_dev, web_dev;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
